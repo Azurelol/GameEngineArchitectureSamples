@@ -1,0 +1,8 @@
+{849ab4d8-6957-43ce-983a-00a72048c0a8} event:/folder/eventB
+{d62fab87-9888-478c-befb-b125d7d70789} event:/eventA
+{5b109a37-19c4-4135-9cce-4a5e1c1de70c} bus:/
+{dff12890-c72a-426f-872e-9e66a4a6f0df} bus:/GrpA
+{09e0b4dd-a40e-4dc4-9f00-096c6bebc586} bus:/GrpB
+{d2de30f2-195b-4e64-bc06-5bca38c1a98c} vca:/VcaB
+{0b82f6c7-54f2-4a83-a521-c40117d99e03} vca:/VcaA
+{adef8af5-21f8-4595-9ba6-142679a682c7} bank:/Master Bank

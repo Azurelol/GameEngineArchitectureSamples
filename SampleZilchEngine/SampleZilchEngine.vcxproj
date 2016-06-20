@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6C918BF-0D35-4622-AA4B-EF7CE7EC2880}</ProjectGuid>
+    <RootNamespace>SampleZilchEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\Dependencies\include;$(ProjectDir)\Core\Precompiled;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)\Dependencies\include;$(ProjectDir)\Core\Precompiled;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\Dependencies\include;$(ProjectDir)\Core\Precompiled;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)\Dependencies\include;$(ProjectDir)\Core\Precompiled;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>Precompiled.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>Precompiled.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>Precompiled.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <ForcedIncludeFiles>Precompiled.h</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Binding\CoreBinding.h" />
+    <ClInclude Include="Core\Binding\CoreBindingMacros.h" />
+    <ClInclude Include="Core\Binding\CoreBindingTypes.h" />
+    <ClInclude Include="Core\Components\ComponentReference.h" />
+    <ClInclude Include="Core\Components\ComponentsInclude.h" />
+    <ClInclude Include="Core\Components\RigidBody.h" />
+    <ClInclude Include="Core\Components\Transform.h" />
+    <ClInclude Include="Core\Components\TransformZilch.h" />
+    <ClInclude Include="Core\Debug\Trace.h" />
+    <ClInclude Include="Core\Objects\Component\Component.h" />
+    <ClInclude Include="Core\Objects\Component\ZilchComponent.h" />
+    <ClInclude Include="Core\Objects\Entity\EntitiesInclude.h" />
+    <ClInclude Include="Core\Objects\Entity\Entity.h" />
+    <ClInclude Include="Core\Objects\Entity\GameObject\GameObject.h" />
+    <ClInclude Include="Core\Objects\Entity\GameSession\GameSession.h" />
+    <ClInclude Include="Core\Objects\Entity\Space\Space.h" />
+    <ClInclude Include="Core\Objects\Object.h" />
+    <ClInclude Include="Core\Objects\Object.hpp" />
+    <ClInclude Include="Core\Objects\ObjectsInclude.h" />
+    <ClInclude Include="Core\Objects\Resource\Resource.h" />
+    <ClInclude Include="Core\Precompiled\Precompiled.h" />
+    <ClInclude Include="Core\Resources\ResourceReference.h" />
+    <ClInclude Include="Core\Resources\ResourcesInclude.h" />
+    <ClInclude Include="Core\Resources\Serialization\Level.h" />
+    <ClInclude Include="Core\Systems\Scripting\Scripting.h" />
+    <ClInclude Include="Core\Objects\System\System.h" />
+    <ClInclude Include="Core\Systems\Scripting\ZilchInterface\ZilchInterface.h" />
+    <ClInclude Include="Core\Systems\SystemReference.h" />
+    <ClInclude Include="Core\Systems\SystemsInclude.h" />
+    <ClInclude Include="Core\Types\Types.h" />
+    <ClInclude Include="Core\Utilities\Macros\Macros.h" />
+    <ClInclude Include="Core\Utilities\Time\Timer.h" />
+    <ClInclude Include="Core\Utilities\UtilitiesInclude.h" />
+    <ClInclude Include="Dependencies\include\ZILCH\Zilch.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Binding\CoreBinding.cpp" />
+    <ClCompile Include="Core\Binding\CoreBindingTypes.cpp" />
+    <ClCompile Include="Core\Components\RigidBody.cpp" />
+    <ClCompile Include="Core\Components\Transform.cpp" />
+    <ClCompile Include="Core\Components\TransformZilch.cpp" />
+    <ClCompile Include="Core\Objects\Component\Component.cpp" />
+    <ClCompile Include="Core\Objects\Component\ZilchComponent.cpp" />
+    <ClCompile Include="Core\Objects\Entity\Entity.cpp" />
+    <ClCompile Include="Core\Objects\Entity\GameObject\GameObject.cpp" />
+    <ClCompile Include="Core\Objects\Entity\GameSession\GameSession.cpp" />
+    <ClCompile Include="Core\Objects\Entity\Space\Space.cpp" />
+    <ClCompile Include="Core\Objects\Object.cpp" />
+    <ClCompile Include="Core\Objects\Resource\Resource.cpp" />
+    <ClCompile Include="Core\Precompiled\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Objects\System\System.cpp" />
+    <ClCompile Include="Core\Resources\Serialization\Level.cpp" />
+    <ClCompile Include="Core\Systems\Scripting\Scripting.cpp" />
+    <ClCompile Include="Core\Systems\Scripting\ZilchInterface\ZilchInterface.cpp" />
+    <ClCompile Include="Core\Systems\Scripting\ZilchInterface\ZilchInterfaceLibrary.cpp" />
+    <ClCompile Include="Dependencies\include\ZILCH\Zilch.cpp" />
+    <ClCompile Include="Driver.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

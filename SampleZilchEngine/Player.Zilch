@@ -1,0 +1,19 @@
+class Player : ZilchComponent 
+{
+    [Property] var SampleInteger : Integer = 24;
+    [Property] var SampleInteger2 : Integer = 36;
+
+    function Initialize()
+    {
+        Console.WriteLine("I got initialized, kupo! I am gonna go ahead and call another function that I have, kupo!");
+        this.DoStuff();
+    }
+
+    function Terminate() {
+        Console.WriteLine("I am being terminated, kupo!");
+    }
+    
+    function DoStuff() {
+        Console.WriteLine("This separate function just got called, kupo!");
+    }
+}
