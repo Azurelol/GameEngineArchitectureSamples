@@ -5,4 +5,4 @@ This sample project demonstrates a framework for a simple game engine using the 
 <img src ="/SampleArchitecture/Documentation/Header.png">
 
 ----
-### Documentation - [Web](/SampleArchitecture/Documentation/SampleArchitectureECS.pdf) <br />
+### Documentation - [Web](https://docs.google.com/document/d/1kzcxmL95oyfJtYHh3KHylx-eZQzcdZ2zNF7SYc7-PNY/edit?usp=sharing) [PDF](/SampleArchitecture/Documentation/SampleArchitectureECS.pdf) <br />
